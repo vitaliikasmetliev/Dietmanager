@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <title>Calory calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3">
+                <h1>Калькулятор калорий</h1>
+                <h2>Для того чтобы узнать калорийность своего рациона введите свое потребление продуктов в день в граммах</h2>
+            </td>
+        </tr>
+        <tr>
+            <td width="70%">
+                <form method="post">
+                    <input type="number" placeholder="Хлеб г" class="form-control"><br>
+                    <input type="number" placeholder="Колбаса г" class="form-control"><br>
+                    <input type="number" placeholder="Масло г" class="form-control"><br>
+                    <input type="number" placeholder="Мясо г" class="form-control"><br>
+                    <input type="number" placeholder="Курица г" class="form-control"><br>
+                    <input type="number" placeholder="Овощи г" class="form-control"><br>
+                    <input type="number" placeholder="Орехи г" class="form-control"><br>
+                    <input type="number" placeholder="Сухофрукты г" class="form-control"><br>
+                    <input type="number" placeholder="Рыба г" class="form-control"><br>
+                    <input type="number" placeholder="Сладости г" class="form-control"><br>
+                    <input type="number" placeholder="Фрукты г" class="form-control"><br>
+                </form>
+            </td>
+            <td width="30%">
+                <h3>
+                    <img src="{% static 'Calculator.jpg' %}"  width="420" height="420"/>
+                </h3>
+            </td>
+        </tr>
+    </table>
+    <form method="post">
+        <button type="submit" class="btn btn-success">Готово</button>
+     </form>
+</body>
+</html> 
